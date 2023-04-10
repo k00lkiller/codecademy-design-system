@@ -50,10 +50,20 @@ nav a{
     display: grid;
  }
 
+ section#colors{
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+ }
+
+ section#colors h2{
+    grid-column: 1 / span 3;
+ }
+
  figure.color{
     border: 1px solid gray;
     max-width: 300px;
  }
+
 
  figure.color figcaption{
     padding: 1em;
