@@ -1,13 +1,42 @@
 :root {
-    --bg-color: lightgray;
+    --bg-color: rgb(234, 233, 233);
     --section-bg-color: whitesmoke;
 
     --font-size-base: 18px;
 
 } 
 body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     background-color: var(--bg-color);
     font-size: var(--font-size-base);
+}
+
+header {
+    background-color: var(--section-bg-color);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+nav{
+    align-self: center;
+}
+
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    
+}
+
+nav a{
+    text-decoration: none;
+
 }
 
  section {
