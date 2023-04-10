@@ -3,6 +3,7 @@
     --section-bg-color: whitesmoke;
 
     --plain-white: white;
+    --smoky-black: #081800;
 
     --font-size-base: 18px;
 
@@ -77,4 +78,7 @@ nav a{
 
  .color-swatch.plain-white{
     background-color: var(--plain-white);
+ }
+ .color-swatch.smoky-black{
+    background-color: var(--smoky-black);
  }
