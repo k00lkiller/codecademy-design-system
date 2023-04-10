@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,15 @@
     <title>Design System</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Design System</h1>
         <nav>
             <ul>
-                <li><a href="https://www.figma.com/file/IAfbrmEIFKSIdJSjXd89o8/PlantLandingPage?node-id=0%3A1&t=tLRTJQ1GvRU1hW5b-0" target="_blank" rel="noopener noreferrer" title="To the Figma design file">Website Design</a></li>
+                <li><a href="https://www.figma.com/file/IAfbrmEIFKSIdJSjXd89o8/PlantLandingPage?node-id=0%3A1&t=tLRTJQ1GvRU1hW5b-0"
+                        target="_blank" rel="noopener noreferrer" title="To the Figma design file">Website Design</a>
+                </li>
                 <li><a href="#colors">Colors</a></li>
                 <li><a href="#fonts">Fonts</a></li>
                 <li><a href="#text">Text styles</a></li>
@@ -22,6 +26,32 @@
     </header>
     <section id="colors">
         <h2>Colors</h2>
+        <figure class="color">
+            <div class="color-swatch plain-white"></div>
+            <figcaption>
+                <h3>Color name</h3>
+                <ul class="color-codes">
+                    <li>
+                        <span class="color-space">hex:</span>
+                        <input type="text" readonly name="hex-value" value="#FFFFFF">
+                    </li>
+                    <li>
+                        <span class="color-space">rgba:</span>
+                        <input type="text" readonly name="rgbs-value" value="rgba(255, 255, 255, 1)">
+                    </li>
+                    <li>
+                        <span class="color-space">hsla:</span>
+                        <input type="text" readonly name="hsla-value" value="hsla(0, 0%, 100%, 1)">
+                    </li>
+                    <li>
+                        <span class="color-space">hsba:</span>
+                        <input type="text" readonly name="hsba-value" value="hsba(0, 0%, 100%, 1)">
+                    </li>
+
+
+                </ul>
+            </figcaption>
+        </figure>
 
     </section>
     <section id="fonts">
@@ -34,4 +64,5 @@
         <h2>Buttons</h2>
     </section>
 </body>
+
 </html>

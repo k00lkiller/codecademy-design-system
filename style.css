@@ -2,6 +2,8 @@
     --bg-color: rgb(234, 233, 233);
     --section-bg-color: whitesmoke;
 
+    --plain-white: white;
+
     --font-size-base: 18px;
 
 } 
@@ -45,4 +47,34 @@ nav a{
     padding: 1em;
     margin: 2em 0;
     display: grid;
+ }
+
+ figure.color{
+    border: 1px solid gray;
+    max-width: 300px;
+ }
+
+ figure.color figcaption{
+    padding: 1em;
+ }
+
+ .color ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+ }
+ .color ul li {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .color-swatch {
+    padding: 3em;
+    border-radius: .5em;
+    border: 1px solid black;
+ }
+
+ .color-swatch.plain-white{
+    background-color: var(--plain-white);
  }
