@@ -185,3 +185,11 @@ nav a{
     font-weight: inherit;
     font-size: clamp(1rem, -0.875rem + 8.333vw, 2rem);
  }
+
+ figure.component figcaption{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: clamp(.3rem, -0.875rem + 8.333vw, .9rem);
+    color:grey;
+    margin-top: 1em;
+ }
