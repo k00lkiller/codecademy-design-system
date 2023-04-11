@@ -39,14 +39,15 @@
    --font-size-desc: clamp(.5rem, -0.875rem + 8.333vw, 1rem);
 
 }
-html{
+
+html {
    scroll-behavior: smooth;
    scroll-padding-top: 3.5rem;
 }
 
 body {
    box-sizing: border-box;
-   
+
    margin: 0;
    padding: 0;
    background-color: var(--bg-color);
@@ -91,7 +92,7 @@ section {
    background-color: var(--section-bg-color);
    border-radius: 1rem;
    padding: 1em;
-   margin: 2em 0;
+   margin: 2em 1em;
    display: grid;
 }
 
@@ -105,8 +106,9 @@ section {
 /* Colors Section */
 
 section#colors {
-   grid-template-rows: auto auto;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: repeat(2, auto);
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 1em;
 }
 
 section#colors h2 {
@@ -120,7 +122,9 @@ section#colors h2 {
 
 figure.color {
    border: 1px solid gray;
-   max-width: 300px;
+   padding: 0;
+   margin: 0;
+
 }
 
 figure.color figcaption {
