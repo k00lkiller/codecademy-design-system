@@ -17,9 +17,17 @@ body {
 }
 
 header {
+    position: sticky;
+    top: 0;
     background-color: var(--section-bg-color);
     display: grid;
     grid-template-columns: 1fr 3fr;
+}
+
+header h1{
+    text-transform: uppercase;
+    font-size: clamp(.3rem, -0.875rem + 8.333vw, 1.3rem);
+    padding: 0 1em;
 }
 
 nav{
