@@ -15,6 +15,7 @@
     font-weight: 500;
     src: url("/fonts/Raleway/static/Raleway-Medium.ttf");
   }
+
   @font-face {
     font-family: "Raleway Regular";
     font-weight: 400;
@@ -27,8 +28,14 @@
 
     --plain-white: white;
     --smoky-black: #081800;
+    --smoky-black-70: rgba(8, 24, 0, .7);
+    --smoky-black-60: rgba(8, 24, 0, .6);
+    --mystic-forestry: #418A1C;
+    --info-grey: grey;
+    --caipirinha-neon-lime: #51C815;
 
     --font-size-base: 18px;
+    --font-size-info: clamp(.3rem, -0.875rem + 8.333vw, .9rem);
 
 } 
 body {
@@ -116,7 +123,6 @@ nav a{
  .color-swatch {
     padding: 3em;
     border-radius: .5em;
-    border: 1px solid black;
  }
 
  .color-swatch.plain-white{
@@ -126,6 +132,22 @@ nav a{
  .color-swatch.smoky-black{
     background-color: var(--smoky-black);
  }
+
+ .color-swatch.smoky-black-70{
+   background-color: var(--smoky-black-70);
+}
+
+.color-swatch.smoky-black-60{
+   background-color: var(--smoky-black-60);
+}
+
+ .color-swatch.mystic-forestry{
+   background-color: var(--mystic-forestry);
+}
+
+.color-swatch.caipirinha-neon-lime{
+   background-color: var(--caipirinha-neon-lime);
+}
 
  /* Fonts Section */
 
@@ -186,10 +208,13 @@ nav a{
     font-size: clamp(1rem, -0.875rem + 8.333vw, 2rem);
  }
 
+ /* Components Section */
+
  figure.component figcaption{
     font-family: sans-serif;
     font-weight: 400;
-    font-size: clamp(.3rem, -0.875rem + 8.333vw, .9rem);
-    color:grey;
+    font-size: var(--font-size-info);
+    color: var(--info-grey);
     margin-top: 1em;
  }
+
